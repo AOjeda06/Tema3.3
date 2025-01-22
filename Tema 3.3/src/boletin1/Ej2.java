@@ -1,6 +1,7 @@
 package boletin1;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 public class Ej2 {
@@ -17,8 +18,8 @@ public class Ej2 {
 
 		// Indicadores a calcular
 		int media;
-		int max = Integer.MIN_VALUE;
-		int min = Integer.MAX_VALUE;
+		int max;
+		int min;
 		int suma = 0;
 
 		// ArrayList para los numeros
@@ -32,19 +33,13 @@ public class Ej2 {
 
 		// Recorremos el array para calcular los datos
 		for (Integer numero : numeros) {
-			if (numero > max) {
-				max = numero;
-			}
-
-			if (numero < min) {
-				min = numero;
-			}
-
 			suma += numero;
 		}
 
 		// Calculamos la media
 		media = suma / longitud;
+		max = Collections.max(numeros);
+		min = Collections.min(numeros);
 
 		// Imprime los resultados
 		System.out.println("max: " + max);

@@ -1,13 +1,13 @@
 package boletin1;
 
-import java.util.LinkedHashSet;
 import java.util.Scanner;
+import java.util.TreeSet;
 
-public class Ej5 {
+public class Ej6 {
 
 	public static void main(String[] args) {
 		// Conjunto
-		LinkedHashSet<String> nombres = new LinkedHashSet<>();
+		TreeSet<String> nombres = new TreeSet<>();
 
 		// Escaner
 		Scanner scanner = new Scanner(System.in);
